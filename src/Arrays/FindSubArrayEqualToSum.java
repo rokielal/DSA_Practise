@@ -7,8 +7,8 @@ package Arrays;
 public class FindSubArrayEqualToSum {
     public static void main(String[] args) {
 
-        int[] arr = {1,2,3,7,5};
-        int sum = 15;
+        int[] arr = {4, 2, 0, 1, 6};
+        int sum = 0;
 
         int i = 0;
         int j = 0;
