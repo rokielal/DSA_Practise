@@ -14,8 +14,7 @@ public class Question04 {
         int count = 0;
 //        Count number of zeroes
         for(int i=0; i<n; i++){
-            if
-            (arr[i] ==0){
+            if (arr[i] ==0){
                 count++;
             }
         }
