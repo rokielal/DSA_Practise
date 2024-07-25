@@ -3,7 +3,7 @@ public class BinarySearch {
     public static void main(String[] args) {
 
         int[] arr= {2,4,6,7,8,9,10};
-        int target = 11;
+        int target = 7;
         System.out.println(ascendingBinarySearch(arr,target));
 
     }

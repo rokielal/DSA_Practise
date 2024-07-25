@@ -2,7 +2,8 @@ package Arrays;
 import java.util.*;
 public class MoveZeroToLast {
     public static void main(String[] args) {
-        int[] arr = {0,1,0,3,12};
+//        int[] arr = {0,1,0,3,12};
+        int[] arr = {6,0,1,0,3,12};
         int i= 0;
         int j = 1;
 

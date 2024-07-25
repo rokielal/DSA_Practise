@@ -12,13 +12,12 @@ public class FindSubArrayEqualToSum {
 
         int i = 0;
         int j = 0;
-        int CurrSum =0;
+        int CurrSum = 0;
         int n = arr.length;
 
         while(j < n){
 //        // Add the current element to currentSum
             CurrSum += arr[j];
-
 
 //                 Move the start pointer to the right to maintain the target sum
                 while(CurrSum > sum && i < j){
