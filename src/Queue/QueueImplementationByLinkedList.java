@@ -7,42 +7,62 @@ public class QueueImplementationByLinkedList {
 
         Node(int data){
             this.data = data;
-            this.next = null;
+
         }
 
     }
     public static class queueLL{
 
         Node head = null;
+        Node tail = null;
         int size = 0;
 
         public void add(int val){
 
             Node temp = new Node(val);
 
-            if(head == null){
+            if(size == 0){
                 head = temp;
-                temp.next = null;
+                tail = temp;
 
             }
             else{
-                Node curr = head;
-                while (curr.next != null){
-                    curr = curr.next;
-                }
-                temp = curr;
-                temp.next = null;
+                tail.next = temp;
+                tail = temp;
             }
             size++;
         }
 
+        public int peek(){
+            if(size == 0) {
+                System.out.println("Queue is empty!");
+                return -1;
+            }
+            return head.data;
+        }
+
+        public int remove(){
+
+            if(size == 0){
+                System.out.println("Queue is Empty!");
+                return -1;
+            }
+
+            int top = head.data;
+            head = head.next;
+
+            size--;
+            return top;
+        }
+
         void display(){
 
-            if(head == null) System.out.println("Queue is Empty!");
+            if(size == 0) System.out.println("Queue is Empty!");
             else{
                 Node curr = head;
                 while (curr != null){
                     System.out.print(curr.data + " ");
+                    curr = curr.next;
                 }
                 System.out.println();
             }
@@ -57,5 +77,9 @@ public class QueueImplementationByLinkedList {
         q1.add(3);
         q1.add(4);
         q1.display();
+        System.out.println(q1.peek());
+        q1.remove();
+        q1.display();
+        System.out.println(q1.peek());
     }
 }
