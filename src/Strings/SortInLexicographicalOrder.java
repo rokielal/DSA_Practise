@@ -12,24 +12,33 @@ public class SortInLexicographicalOrder {
         System.out.println("Original Array: " + Arrays.toString(fruits));
 //        Selection Sort
 
-        for(int i=0; i<n-1; i++){
+//        for(int i=0; i<n-1; i++){
+//
+//            int min_index = i;
+////            String minStr = fruits[i];
+//
+//            for(int j=i+1; j<n; j++){
+//
+//                if(fruits[j].compareTo(fruits[min_index]) < 0)  // ascending order
+////                    if(fruits[j].compareTo(fruits[min_index]) > 0)  // descending order
+//                {
+//                    min_index = j;
+//                }
+//            }
+//
+//            String temp = fruits[i];
+//            fruits[i] = fruits[min_index];
+//            fruits[min_index] = temp;
+//
+//        }
 
-            int min_index = i;
-//            String minStr = fruits[i];
+        for(int i=0; i<n-1 ;i++){
 
-            for(int j=i+1; j<n; j++){
-
-                if(fruits[j].compareTo(fruits[min_index]) < 0)  // ascending order
-//                    if(fruits[j].compareTo(fruits[min_index]) > 0)  // descending order
-                {
-                    min_index = j;
-                }
+            if(fruits[i].compareTo(fruits[i+1]) > 0){
+                String temp = fruits[i];
+                fruits[i] = fruits[i+1];
+                fruits[i+1] = temp;
             }
-
-            String temp = fruits[i];
-            fruits[i] = fruits[min_index];
-            fruits[min_index] = temp;
-
         }
 
         System.out.println(Arrays.toString(fruits));

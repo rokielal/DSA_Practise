@@ -6,8 +6,8 @@ import java.util.HashMap;
 public class Question02 {
     public static void main(String[] args) {
 
-        String s1 = "silent";
-        String s2 = "lifhfhsten";
+        String s1 = "silents";
+        String s2 = "stenlis";
 
         if(s1.length() != s2.length()){
             System.out.println("False");
@@ -19,7 +19,7 @@ public class Question02 {
 
         HashMap<Character, Integer> mp1 = new HashMap<>();
 
-        for(var el1: str1) {
+        for(char el1: str1) {
             if(!mp1.containsKey(el1)){
                 mp1.put(el1, 1);
             }
@@ -28,7 +28,7 @@ public class Question02 {
             }
         }
 
-        for(var el2 : str2){
+        for(char el2 : str2){
             if(mp1.containsKey(el2)){
                 mp1.remove(el2);
             }

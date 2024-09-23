@@ -7,6 +7,7 @@ public class PrintAllSubString {
     public static void main(String[] args) {
         int originalNum = 1234;
         String str = String.valueOf(originalNum);
+//        valueOf() will convert any datatype to String (here int to String)
 
 
 //        String str = "abcd";

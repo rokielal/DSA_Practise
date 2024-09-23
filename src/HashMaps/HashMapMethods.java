@@ -40,8 +40,8 @@ public class HashMapMethods {
         if(!mp.containsKey("Yash")) mp.put("Yash", 40);
 
 //        2:Using method putIfAbsent
-        mp.putIfAbsent("Yashika", 30); // will enter the as it is not present
-        mp.putIfAbsent("Yash", 30); // will not enter as it is alreadt present
+        mp.putIfAbsent("Yashika", 30); // will enter as it is not present
+        mp.putIfAbsent("Yash", 30); // will not enter as it is already present
 
 //        Get all the keys in HashMap: keySet() is used to get all the keys in map
         System.out.println(mp.keySet());

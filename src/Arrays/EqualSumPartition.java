@@ -23,6 +23,7 @@ public class EqualSumPartition {
 
             if(prefixSum == suffixSum) return true;
         }
+
         return false;
     }
     public static void main(String[] args) {

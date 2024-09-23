@@ -8,7 +8,7 @@ import java.util.Arrays;
 //Approach: Convert strVng to a character array, sort the array then return it in a strVng format.
 public class PrintStringInlexicographicalOrder {
     public static void main(String[] args) {
-        String str = "coding";
+        String str = "zcoding";
 
         char[] arrStr = str.toCharArray();
         int n = arrStr.length;

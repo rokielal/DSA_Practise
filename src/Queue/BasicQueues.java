@@ -14,9 +14,9 @@ public class BasicQueues {
             helperQue.add(q.remove());
         }
         System.out.println();
-        while (helperQue.size() != 0 ){
-            q.add(helperQue.remove());
-        }
+//        while (helperQue.size() != 0 ){
+//            q.add(helperQue.remove());
+//        }
     }
     public static void main(String[] args) {
 
