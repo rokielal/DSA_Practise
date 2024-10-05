@@ -61,16 +61,16 @@ public class StackusingQueue {
 
         st.display();
         st.push(10);
-        System.out.println(st.peek());
+        System.out.println(st.peek()); // 10
         st.push(20);
         st.push(30);
-        System.out.println(st.peek());
-        st.display();
+        System.out.println(st.peek()); // 30
+        st.display(); // 30 20 10
         System.out.println();
-        System.out.println(st.pop());
-        st.display();
+        System.out.println(st.pop()); // 30
+        st.display(); // 20 10
         System.out.println();
-        st.pop();
-        st.display();
+        st.pop(); // 20
+        st.display(); // 10
     }
 }
